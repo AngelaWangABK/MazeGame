@@ -20,6 +20,7 @@ public:
 
 	int GetLives() { return m_lives; }
 	void DecrementLives() { m_lives--; }
+	void DrinkPotion(int strength) { m_lives += strength; }
 
 	virtual ActorType GetType() override { return ActorType::Player; }
 	virtual void Draw() override;
